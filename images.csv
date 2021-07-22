@@ -1,0 +1,9 @@
+#python base image tag,ansible installation version,Dockerfile template
+3.8.11-buster,2.9.24,Dockerfile-debian.template
+3.8.11-alpine3.13,2.9.24,Dockerfile-alpine.template
+3.8.11-buster,2.10.7,Dockerfile-debian.template
+3.8.11-alpine3.13,2.10.7,Dockerfile-alpine.template
+3.9.6-buster,2.9.24,Dockerfile-debian.template
+3.9.6-alpine3.13,2.9.24,Dockerfile-alpine.template
+3.9.6-buster,2.10.7,Dockerfile-debian.template
+3.9.6-alpine3.13,2.10.7,Dockerfile-alpine.template

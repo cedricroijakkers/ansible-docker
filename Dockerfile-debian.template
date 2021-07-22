@@ -1,0 +1,7 @@
+FROM python:%%PLACEHOLDER_PYTHON_IMAGE%%
+
+RUN pip install pip --upgrade && \
+pip install ansible==%%PLACEHOLDER_ANSIBLE_VERSION%% && \
+apt-get update -y && \
+DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends sshpass && \
+apt-get clean

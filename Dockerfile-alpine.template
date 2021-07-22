@@ -1,0 +1,7 @@
+FROM python:%%PLACEHOLDER_PYTHON_IMAGE%%
+
+RUN apk add --no-cache gcc musl-dev python3-dev libffi-dev openssl-dev cargo && \
+pip install pip --upgrade && \
+pip install ansible==%%PLACEHOLDER_ANSIBLE_VERSION%% && \
+apk add --no-cache sshpass && \
+apk del --no-network gcc musl-dev rust cargo linux-headers libffi-dev openssl-dev python3-dev
